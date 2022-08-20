@@ -52,8 +52,7 @@ public abstract class Account {
 
 	public boolean debitAccount(double amount) {
 		// complete the function
-		if(amount < balance) return false;
-		balance -= amount;
-        return true;
+		this.balance =balance-amount;
+		return this.balance-amount>0;
 	}
 }
