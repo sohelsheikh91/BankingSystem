@@ -7,7 +7,7 @@ import java.util.LinkedHashMap;
  * {@link #accounts}: List&lt;Long, Account&gt;
  */
 public class Bank implements BankInterface {
-	private LinkedHashMap<Long, Account> accounts;
+	private static LinkedHashMap<Long, Account> accounts;
 	private static Long accountNumber = 0L;
 
 	public Bank() {
